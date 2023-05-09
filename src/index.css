@@ -1,0 +1,64 @@
+body {
+  font-family: 'Poppins', sans-serif;
+padding: 0px;
+margin: 0px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Merriweather+Sans:wght@400;600&family=Poppins:wght@500&family=Schibsted+Grotesk:ital,wght@1,700&display=swap');
+::-webkit-scrollbar {
+  display: none;
+}
+
+.css-3wdh7x-MuiTypography-root{
+  font-weight: 600 !important;
+  font-size: 45px !important;
+}
+.css-13pgxdy-MuiTypography-root{
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+.css-3txelz::before,.css-3txelz:hover:not(.Mui-disabled, .Mui-error)::before{
+  border: none !important;
+}
+.css-3txelz::after,.css-1nbw9tx::after,.css-q0jhri-MuiInputBase-root-MuiInput-root:after{
+  content: none;
+  border: none !important;
+}
+.css-q0jhri-MuiInputBase-root-MuiInput-root:before{
+  border:none;
+}
+
+.css-1nbw9tx:hover:not(.Mui-disabled, .Mui-error)::before{
+  border: none !important;
+}
+.css-1nbw9tx::before,.css-q0jhri-MuiInputBase-root-MuiInput-root:before{
+  border: none !important;
+}
+.css-buc9sn-MuiInputBase-root-MuiInput-root:before{
+  border: none !important;
+}
+.css-buc9sn-MuiInputBase-root-MuiInput-root:after{
+  border: none !important;
+}
+@media (max-width:700px) {
+  .css-13pgxdy-MuiTypography-root{
+    font-size: 15px !important;
+  }
+  .css-3wdh7x-MuiTypography-root{
+    font-size: 25px !important;
+    font-weight: 600 !important;
+  }
+  .MuiTypography-h4 {
+ font-size: 25px !important;
+  }
+.MuiTypography-p {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+  .css-19kzrtu{
+    padding: 0px !important;
+  }
+  .css-19r6kue-MuiContainer-root{
+    padding: 0px !important;
+  }
+}
