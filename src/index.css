@@ -40,6 +40,14 @@ margin: 0px;
 .css-buc9sn-MuiInputBase-root-MuiInput-root:after{
   border: none !important;
 }
+.css-ahj2mt-MuiTypography-root{
+height: 100%;
+}
+.css-19kzrtu{
+  height: 100%;
+  padding: 0px !important; 
+}
+
 @media (max-width:700px) {
   .css-13pgxdy-MuiTypography-root{
     font-size: 15px !important;
@@ -50,7 +58,7 @@ margin: 0px;
   }
   .MuiTypography-h4 {
  font-size: 25px !important;
-  }
+ }
 .MuiTypography-p {
     font-size: 15px !important;
     line-height: 20px !important;

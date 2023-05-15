@@ -11,6 +11,7 @@ import Rating from "@mui/material/Rating";
 import locan from "../assets/locan.png";
 import Button from '@mui/material/Button'
 import { useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -68,7 +69,7 @@ const MyItems = () => {
               onChange={handleChange}
               aria-label="basic tabs example"
             >
-              <Tab label="My Rentals" {...a11yProps(0)} />
+         <Tab label="My Rentals" {...a11yProps(0)} />
               <Tab label="My Items" {...a11yProps(1)} />
             </Tabs>
           </Box>
@@ -78,7 +79,8 @@ const MyItems = () => {
             Rent new item?
             </Button>
            </Box>
-            {[0, 1].map((items) => (
+      <Box style={{marginTop:'3rem'}}>
+      {[0, 1].map((items) => (
               <Box
                 key={items}
                 style={{
@@ -216,8 +218,10 @@ const MyItems = () => {
                 </Box>
               </Box>
             ))}
+      </Box>
 
-            {[0, 1].map((items) => (
+           <Box>
+           {[0, 1].map((items) => (
               <Box
                 key={items}
                 style={{
@@ -355,16 +359,20 @@ const MyItems = () => {
                 </Box>
               </Box>
             ))}
+           </Box>
           </TabPanel>
 
 
           <TabPanel value={value} index={1}>
           <Box style={{display:'flex',justifyContent:'flex-end',marginTop:'-4rem'}}>
-           <Button variant="contained" style={{}}> 
+          <Link to='/RentnewItems'>
+          <Button variant="contained"> 
            List new item?
             </Button>
+          </Link>
            </Box>
-          {[0, 1].map((items) => (
+         <Box style={{marginTop:'3rem'}}>
+         {[0, 1].map((items) => (
               <Box
                 key={items}
                 style={{
@@ -502,6 +510,7 @@ const MyItems = () => {
                 </Box>
               </Box>
             ))}
+         </Box>
           </TabPanel>
         </Box>
       </Container>

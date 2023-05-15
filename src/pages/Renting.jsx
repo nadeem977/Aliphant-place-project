@@ -254,9 +254,11 @@ const Renting = () => {
                 wonderful planet we call home.
               </Typography>
              <Box style={{display:'flex',justifyContent:'flex-end',marginTop:'2rem'}}>
-             <Button variant="contained">
+          <Link to='/SearchbyCatagory'>
+          <Button variant="contained">
               Search and rent
               </Button>
+          </Link>
              </Box>
             </Box>
           </Grid>

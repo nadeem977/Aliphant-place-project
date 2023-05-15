@@ -119,6 +119,7 @@ const Navbarscomponent = (props) => {
               ))}
             
               <Link
+                to='/Inbox'
                 style={{
                   textDecoration: "none",
                   color: "inherit",
@@ -204,6 +205,7 @@ const Navbarscomponent = (props) => {
 
             <Box component={"div"} sx={{ display: "flex", gap: "20px" }}>
               <Link
+              to='/Inbox'
                 style={{
                  
                   textDecoration: "none",

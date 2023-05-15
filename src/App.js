@@ -20,7 +20,9 @@ import MyItems from './pages/MyItems'
 import Login from "./pages/Login";
 import Forgetpassword from "./pages/Forgetpassword";
 import Passwordreset from "./pages/Passwordreset";
-
+import ProfileEdifing from "./pages/ProfileEdifing";
+import Inbox from "./pages/Inbox";
+import RentnewItems from "./pages/RentnewItems";
 
 
 function App() {
@@ -46,6 +48,9 @@ function App() {
         <Route path='/Login' element={<Login/>} /> 
         <Route path='/Forgetpassword' element={<Forgetpassword/>} /> 
         <Route path='/Passwordreset' element={<Passwordreset/>} /> 
+        <Route path='/ProfileEdifing' element={<ProfileEdifing/>} /> 
+        <Route path='/Inbox' element={<Inbox/>} /> 
+        <Route path='/RentnewItems' element={<RentnewItems/>} /> 
       </Routes>
       <Footer/>
     </BrowserRouter>

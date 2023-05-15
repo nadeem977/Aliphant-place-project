@@ -6,6 +6,8 @@ import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import { useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const useStyles = {
   width: "250px",
@@ -255,9 +257,13 @@ const ListNewitem = () => {
 
       <Container maxWidth="xl" style={{margin:'3rem auto'}}>
         <Box style={{display:"flex",justifyContent:'flex-end'}}>
+            <Link to='/RentnewItems'>
             <Button variant="contained">
             List new item
             </Button>
+            </Link>
+
+
         </Box>
       </Container>
     </>

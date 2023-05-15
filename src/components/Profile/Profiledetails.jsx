@@ -16,7 +16,7 @@ const maindiv = {
   gap: "20px",
 };
 
-const Profiledetails = () => {
+const Profiledetails = (props) => {
   const isLargeS10 = useMediaQuery("(max-width:1200px)");
   const isLargeS50 = useMediaQuery("(max-width:750px)");
   const isLargeS40 = useMediaQuery("(max-width:450px)");
@@ -72,7 +72,7 @@ const Profiledetails = () => {
         </Box>
       </Container> */}
 
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Box style={{display:'flex',justifyContent:'space-between',marginTop:'3rem',flexWrap:'wrap'}}>
           <Typography
             variant="h6"
@@ -80,9 +80,30 @@ const Profiledetails = () => {
           >
             Profile Details
           </Typography>
-          <Box style={{display:'flex',justifyContent:'space-between',width:'74%',flexWrap:'wrap',gap:'20px'}}>
-            <Button variant="contained" style={{padding:'7px 40px'}}>Inbox</Button>
+          <Box
+           style={{display:props.dpl ? 'flex':'none',gap:'20px',flexWrap:'wrap',alignItems:'center'}}
+           >
+          <Link to='/Passwordreset'>
+          <Button variant="contained">
+            Reset Password
+            </Button>
+          </Link>
+
+         <Link to='/Profile'>
+         <Button variant="contained" style={{padding:'7px 40px'}}>
+            Save
+            </Button>
+         </Link>
+         
+          </Box>
+          <Box style={{display:props.dpl ? 'none':'flex',alignItems:'center',justifyContent:'space-between',width:'74%',flexWrap:'wrap',gap:'20px'}}>
+           <Link to='/Inbox'>
+           <Button variant="contained" style={{padding:'7px 40px'}}>Inbox</Button>
+           </Link>
+            <Link to='/ProfileEdifing'>
             <Button variant="contained">Edit Profile</Button>
+            </Link>
+
           </Box>
         </Box>
       </Container>
